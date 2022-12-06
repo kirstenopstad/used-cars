@@ -19,22 +19,16 @@ namespace Dealership.Models {
 
     public static string MakeSounds(string sound)
     {
-      return "Our cars sounds like" + sound;
+      return "Our cars sounds like " + sound;
     }
 
-    // Functions below implicitly accomplished by the auto-implement properties above
+    // Adding in functionality to lower the cost of the cars by a percentage amount for a sales event.
+    public double Discount(double percent)
+    {
+      int discountedPrice = Price - (int)(Price * percent);
+      return Price = discountedPrice;
+    }
 
-    // public string MakeModel //public property
-    // {
-    //     get // a property accessor used to return the property value
-    //     {
-    //         return _makeModel; 
-    //     }
-    //     set // a property accessor used to assign a new value
-    //     {
-    //         _makeModel = value;
-    //     }
-    // }
 
   }
 }
